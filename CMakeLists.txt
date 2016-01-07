@@ -1,10 +1,9 @@
 cmake_minimum_required(VERSION 3.2)
 project(led_on)
 
-SET(ARM_TOOL_CHAIN $ENV{HOME}/dev/rpi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64)
-SET(CMAKE_SYSTEM_NAME Linux)
-
 # rpi cross compiler
+SET(CMAKE_SYSTEM_NAME Linux)
+SET(ARM_TOOL_CHAIN $ENV{HOME}/dev/rpi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64)
 SET(CMAKE_C_COMPILER   ${ARM_TOOL_CHAIN}/bin/arm-linux-gnueabihf-gcc)
 SET(CMAKE_CXX_COMPILER ${ARM_TOOL_CHAIN}/bin/arm-linux-gnueabihf-g++)
 
